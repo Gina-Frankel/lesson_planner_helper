@@ -49,6 +49,16 @@ describe Planner do
       objective = "To learn representational skills by drawing a robot"
       expect(planner.add_objective(objective)). to eq objective
     end
+
+    it 'adds multiple objectives to planner' do
+      planner = Planner.new  
+      
+      objective_1 = "To learn representational skills by drawing a robot"
+      objective_2 = "To learn about colour mixing by mixing primary colours together"
+     
+      planner.add_objective(objective_1)
+      expect(planner.add_objective(objective_2)). to eq "#{objective_1}\n#{objective_2}"
+    end
     
   end
 end

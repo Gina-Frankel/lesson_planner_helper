@@ -1,8 +1,9 @@
 class Planner
-  attr_reader :resources, :questions
+  attr_reader :resources, :questions, :objectives
   def initialize
     @resources = []
     @questions = []
+    @objectives = []
   end
 
   def get_welcome_message
@@ -20,7 +21,8 @@ class Planner
   end 
 
   def add_objective(objective)
-    "To learn representational skills by drawing a robot"
+    objectives.push(objective)
+    objectives.join("\n") 
   end
   
 end
