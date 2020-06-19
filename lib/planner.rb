@@ -1,7 +1,8 @@
 class Planner
-  attr_reader :resources
+  attr_reader :resources, :questions
   def initialize
     @resources = []
+    @questions = []
   end
 
   def get_welcome_message
@@ -14,7 +15,8 @@ class Planner
   end 
 
   def add_question(question)
-    'What else could you add?'
+    questions.push(question)
+    questions.join("\n")
   end 
   
 end

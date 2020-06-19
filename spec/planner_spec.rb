@@ -28,10 +28,17 @@ describe Planner do
   end
 
   describe '#add_question' do
-    it 'adds a question to plan' do
+    it 'adds a question to planner' do
       planner = Planner.new  
 
       expect(planner.add_question('What else could you add?')). to eq 'What else could you add?'
+    end
+
+    it 'adds multiple questions to planner' do
+      planner = Planner.new  
+
+      planner.add_question('What else could you add?')
+      expect(planner.add_question('Why did you choose those materials?')). to eq "What else could you add?\nWhy did you choose those materials?"
     end
   end
 end
