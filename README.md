@@ -58,11 +58,15 @@ I can see an explanation of Reggio Emilia theory
 # MVP 
 
 ## Resources 
+
+
+1. 
 ``` 
 As a new teacher,
 so that I know what I need for my lesson,
 I can add resources 
 ```
+- [ ] 
 
 ###  Experience 
 ``` 
