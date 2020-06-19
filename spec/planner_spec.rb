@@ -41,4 +41,14 @@ describe Planner do
       expect(planner.add_question('Why did you choose those materials?')). to eq "What else could you add?\nWhy did you choose those materials?"
     end
   end
+
+  describe '#add_objective' do
+    it 'adds an objective to planner' do
+      planner = Planner.new  
+      
+      objective = "To learn representational skills by drawing a robot"
+      expect(planner.add_objective(objective)). to eq objective
+    end
+    
+  end
 end

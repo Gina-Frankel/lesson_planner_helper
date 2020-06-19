@@ -18,5 +18,9 @@ class Planner
     questions.push(question)
     questions.join("\n")
   end 
+
+  def add_objective(objective)
+    "To learn representational skills by drawing a robot"
+  end
   
 end

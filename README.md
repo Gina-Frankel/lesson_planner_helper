@@ -66,7 +66,7 @@ As a new teacher,
 so that I know what I need for my lesson,
 I can add resources 
 ```
-- [ ] 
+- [x] 
 
 ###  Experience 
 2. 
@@ -75,7 +75,7 @@ As a new teacher,
 so that I can support and extend children's learning
 I can add my own questions
 ```
-
+- [x]
 ### Objectives 
 3. 
 ``` 
