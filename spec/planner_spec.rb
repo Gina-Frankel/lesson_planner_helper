@@ -12,8 +12,8 @@ describe Planner do
     end
   end
 
-  describe '#add' do
-    it 'adds a resource' do
+  describe '#add_resource' do
+    it 'adds a resource to plan' do
       planner = Planner.new
 
       expect(planner.add_resource('Pencils')).to eq 'Pencils'
@@ -24,6 +24,14 @@ describe Planner do
 
       planner.add_resource('Pencils')
       expect(planner.add_resource('Paint')).to eq "Pencils\nPaint"
+    end
+  end
+
+  describe '#add_question' do
+    it 'adds a question to plan' do
+      planner = Planner.new  
+
+      expect(planner.add_question('What else could you add?')). to eq 'What else could you add?'
     end
   end
 end

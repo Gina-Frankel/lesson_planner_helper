@@ -12,4 +12,9 @@ class Planner
     resources.push(resource_item)
     resources.join("\n")
   end 
+
+  def add_question(question)
+    'What else could you add?'
+  end 
+  
 end
