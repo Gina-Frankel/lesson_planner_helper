@@ -1,6 +1,6 @@
 require 'Planner'
 
-describe 'Feature test:' do
+xdescribe 'Feature test:' do
     it 'user can add a resource to plan' do
       lesson_planner = LessonPlanner.new
       resource_planner = ResourcePlanner.new
