@@ -1,7 +1,9 @@
+require 'resource_planner'
+
 class LessonPlanner
   attr_reader :resources, :questions, :objectives
   def initialize
-    @resources = []
+    #@resources = []
     @questions = []
     @objectives = []
   end
@@ -10,9 +12,8 @@ class LessonPlanner
     'Welcome to the Provocation Station Planning Tool'
   end
 
-  def add_resource(resource_item)
-    resources.push(resource_item)
-    resources.join("\n")
+  def write(planner, user_input)
+    planner.add_to_plan(user_input)
   end 
 
   def add_question(question)

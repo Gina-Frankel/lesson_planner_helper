@@ -12,12 +12,12 @@ describe LessonPlanner do
     end
   end
 
-  xdescribe '#add' do
+  describe '#add' do
     it 'adds a resource to plan' do
           lesson_planner = LessonPlanner.new
-          Resource = double("ResourcePlanner") 
+          resource_planner = instance_double("ResourcePlanner", add_to_plan: "Pencils") 
     
-          expect(lesson_planner.add(resource_planner, 'Pencil')).to eq 'Pencils'
+          expect(lesson_planner.write(resource_planner, 'Pencils')).to eq 'Pencils'
     end
   end 
 end 
