@@ -1,4 +1,4 @@
-require 'Planner'
+require 'lesson_planner'
 
 xdescribe 'Feature test:' do
     it 'user can add a resource to plan' do

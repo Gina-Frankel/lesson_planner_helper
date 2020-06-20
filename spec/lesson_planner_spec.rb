@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'planner'
+require 'lesson_planner'
 
 describe LessonPlanner do
   describe '#get_welcome_message' do
