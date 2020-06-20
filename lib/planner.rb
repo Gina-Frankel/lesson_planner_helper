@@ -1,4 +1,4 @@
-class Planner
+class LessonPlanner
   attr_reader :resources, :questions, :objectives
   def initialize
     @resources = []
