@@ -9,4 +9,10 @@ class ResourcePlanner
     resources.push(user_input)
     resources.join("\n")
   end 
+
+  private
+  def convert_to_new_line_seperated_value
+    resources.join("\n")
+  end 
+
 end
