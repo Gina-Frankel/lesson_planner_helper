@@ -2,14 +2,15 @@ require 'resource_planner'
 require 'printer'
 
 class LessonPlanner
-  attr_reader :resources, :questions, :objectives 
+  attr_reader :resources, :questions, :objectives, :plan
   attr_accessor :printer
   def initialize(printer: Printer.new )
     #@resources = []
     @questions = []
     @objectives = []
-    @plan = []
+    #@resources = ResourcePlanner.new
     @printer = printer
+    @plan =  ""
   end
 
   def get_welcome_message
@@ -17,11 +18,11 @@ class LessonPlanner
   end
 
   def write(planner, user_input)
-    planner.add_to_plan(user_input)
+    @plan = planner.add_to_plan(user_input)
   end 
 
   def display
-    printer.output(@plan)
+    printer.output(plan)
   end 
     
 
