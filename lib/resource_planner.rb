@@ -8,7 +8,7 @@ class ResourcePlanner
   end
 
   def add_to_plan(user_input)
-    resources.push(user_input)
+    resources.push('• ' + user_input)
     convert_to_new_line_seperated_value(resources)
   end
 

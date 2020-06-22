@@ -10,8 +10,8 @@ class QuestionPlanner
 
   def add_to_plan(user_input)
     #question_number = questions.length.to_s
-    #numbered_questions = question_number + '. ' + user_input
-    questions.push([user_input])
+    bulleted_question =  '• ' + user_input
+    questions.push([bulleted_question])
     format_for_display
   end
 

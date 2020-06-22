@@ -14,7 +14,7 @@ describe ResourcePlanner do
     it 'adds a resource to plan' do
       resource_planner = ResourcePlanner.new
 
-      expect(resource_planner.add_to_plan('Pencils')).to eq "Resources:\nPencils"
+      expect(resource_planner.add_to_plan('Pencils')).to eq "Resources:\n• Pencils"
     end
   end
 end

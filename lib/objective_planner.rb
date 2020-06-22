@@ -8,9 +8,8 @@ class ObjectivePlanner
   end
 
   def add_to_plan(user_input)
-    #objective_number = objectives.length.to_s
-    #numbered_plan = objective_number + '. ' + user_input
-    objectives.push([user_input])
+    bulleted_objectives =  '• ' + user_input
+    objectives.push([bulleted_objectives])
     format_for_display
   end
 
