@@ -10,13 +10,14 @@ class ObjectivePlanner
 
   def add_to_plan(user_input)
     objectives.push([BULLET_POINT + user_input])
-    format_for_display
+    self
   end
 
   private
 
   def format_for_display
-     objectives.join("\n")
+     pp objectives
+    # objectives.join("\n")
   end
 
 end
