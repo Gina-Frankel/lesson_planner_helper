@@ -1,20 +1,24 @@
 class ObjectivePlanner
 
- attr_reader :objectives
- SUBHEADING = "Objectives:"
+ attr_reader :objectives, :objective_number
+ HEADER = "Objectives:"
   def initialize
-    @objectives =[SUBHEADING]
+    @objectives =[]
+    @objective_number = 0
   end
 
   def add_to_plan(user_input)
-    objectives.push('1. ' + user_input)
-    convert_to_new_line_seperated_value
+    @objective_number += 1
+    objective_number = objectives.length + 1
+    numbered_plan = objective_number.to_s + '. ' + user_input
+    objectives.push([numbered_plan])
+    format_for_display
   end
 
   private
 
-  def convert_to_new_line_seperated_value
-    objectives.join("\n")
+  def format_for_display
+    HEADER + "\n" + objectives.join("\n")
   end
 
 end
