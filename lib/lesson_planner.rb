@@ -1,5 +1,8 @@
-require 'resource_planner'
-require 'printer'
+require_relative 'printer'
+require_relative 'objective_planner'
+require_relative 'question_planner'
+require_relative 'esource_planner'
+
 
 class LessonPlanner
   attr_reader :resources, :questions, :objectives, :plan
@@ -17,8 +20,9 @@ class LessonPlanner
     'Welcome to the Provocation Station Planning Tool'
   end
 
-  def write(planner, user_input)
-    @plan = planner.add_to_plan(user_input)
+  def write(planner, planning_item)
+    @plan = planner.add_to_plan(planning_item)
+    display
   end 
 
   def display
