@@ -10,6 +10,7 @@ class ObjectivePlanner
     convert_to_new_line_seperated_value
   end
 
+  private  
   def convert_to_new_line_seperated_value
     objectives.join("\n")
   end
