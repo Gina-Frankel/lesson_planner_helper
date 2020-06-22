@@ -10,14 +10,11 @@ describe ResourcePlanner do
     end
   end
 
-  describe '#add_resource'
-end
+  describe '#add_to_plan' do
+    it 'adds a resource to plan' do
+      resource_planner = ResourcePlanner.new
 
-describe '#add_to_plan' do
-  it 'adds a resource to plan' do
-    resource_planner = ResourcePlanner.new
-
-    expect(resource_planner.add_to_plan('Pencils')).to eq "Resources:\nPencils"
+      expect(resource_planner.add_to_plan('Pencils')).to eq "Resources:\nPencils"
+    end
   end
-
 end
