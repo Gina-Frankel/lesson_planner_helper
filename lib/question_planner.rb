@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class QuestionPlanner
+  BULLET_POINT = '• '
   attr_reader :questions
 
   HEADER = 'Questions:'
@@ -9,14 +10,11 @@ class QuestionPlanner
   end
 
   def add_to_plan(user_input)
-    #question_number = questions.length.to_s
-    bulleted_question =  '• ' + user_input
-    questions.push([bulleted_question])
+    questions.push([BULLET_POINT + user_input])
     format_for_display
   end
 
   def format_for_display
-    pp questions
     questions.join("\n")
   end
 end

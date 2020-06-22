@@ -1,15 +1,15 @@
 class ObjectivePlanner
 
+  BULLET_POINT = '• '
+  HEADER = "Objectives:"
  attr_reader :objectives, :objective_number
- HEADER = "Objectives:"
 
   def initialize
     @objectives =[[HEADER]]
   end
 
   def add_to_plan(user_input)
-    bulleted_objectives =  '• ' + user_input
-    objectives.push([bulleted_objectives])
+    objectives.push([BULLET_POINT + user_input])
     format_for_display
   end
 
