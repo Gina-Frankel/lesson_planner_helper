@@ -15,10 +15,10 @@ describe 'Feature test:' do
       lesson_planner = LessonPlanner.new
       objective_planner = ObjectivePlanner.new
 
-      lesson_planner.write(objective_planner,'1. To write their name')
-      lesson_planner.write(objective_planner,'2. To identify the letters of thier name')
+      lesson_planner.write(objective_planner,'To write their name')
+      lesson_planner.write(objective_planner,'To identify the letters of thier name')
 
-      expect{ lesson_planner.display }.to output("Objective:\nTo write their name\nTo identify the letters of thier name").to_stdout
+      expect{ lesson_planner.display }.to output("Objectives:\n1. To write their name\n2. To identify the letters of thier name").to_stdout
     end
 
     
