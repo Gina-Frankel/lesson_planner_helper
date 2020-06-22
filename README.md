@@ -28,6 +28,8 @@ I can see examples of objectives
 ```
 
 ## Experience 
+
+
 ``` 
 As a new teacher, 
 so that I can support and extend children's learning
@@ -64,8 +66,10 @@ I can see an explanation of Reggio Emilia theory
 ``` 
 As a new teacher,
 so that I know what I need for my lesson,
-I can add resources 
+I can add resources to my planner
 ```
+ resources.add(planner)
+ planner.add(resources)
 - [x] 
 
 ###  Experience 
@@ -83,3 +87,6 @@ As a new teacher,
 so that I have a clear idea of what I want the children to learn,
 I can add an objective
 ```
+- [x]
+
+- Create a class for resource, question and objective
