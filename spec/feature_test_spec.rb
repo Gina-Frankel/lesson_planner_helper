@@ -17,8 +17,8 @@ describe 'Feature test:' do
     lesson_planner = LessonPlanner.new
     objective_planner = ObjectivePlanner.new
 
-    lesson_planner.write(objective_planner, 'To write their name')
-    lesson_planner.write(objective_planner, 'To identify the letters of thier name')
+    lesson_planner.write(objective_planner, 'To paint themselves')
+    lesson_planner.write(objective_planner, 'To mix colours')
 
     expect { lesson_planner.display }.to output("Objectives:\n1. To paint themselves\n2. To mix colours").to_stdout
   end
@@ -28,10 +28,10 @@ describe 'Feature test:' do
     question_planner = QuestionPlanner.new
 
     question1 = 'What could you do next?'
-    question2  = 'Why did you use this colour?'
+    question2 = 'Why did you use this colour?'
     lesson_planner.write(question_planner, question1)
     lesson_planner.write(question_planner, question2)
 
-    expect { lesson_planner.display }.to output("Questions:\n1.#{question1}\n2. #{question2}").to_stdout
+    expect { lesson_planner.display }.to output("Questions:\n1. #{question1}\n2. #{question2}").to_stdout
   end
-end 
+end
