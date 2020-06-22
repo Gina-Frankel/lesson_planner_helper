@@ -1,7 +1,7 @@
 require_relative 'printer'
 require_relative 'objective_planner'
 require_relative 'question_planner'
-require_relative 'esource_planner'
+require_relative 'resource_planner'
 
 
 class LessonPlanner
