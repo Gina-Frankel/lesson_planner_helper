@@ -9,9 +9,9 @@ class QuestionPlanner
   end
 
   def add_to_plan(user_input)
-    question_number = questions.length.to_s
-    numbered_questions = question_number + '. ' + user_input
-    questions.push([numbered_questions])
+    #question_number = questions.length.to_s
+    #numbered_questions = question_number + '. ' + user_input
+    questions.push([user_input])
     format_for_display
   end
 

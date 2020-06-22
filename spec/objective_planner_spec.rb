@@ -6,7 +6,7 @@ describe ObjectivePlanner do
 
     HEADER = "Objectives:"
     objective = "To add one digit numbers"
-    expect(objective_planner.add_to_plan(objective)).to eq "#{HEADER}\n1. #{objective}"
+    expect(objective_planner.add_to_plan(objective)).to eq "#{HEADER}\n#{objective}"
   end
 
   it 'adds multiple numbered resources to array' do
@@ -15,7 +15,7 @@ describe ObjectivePlanner do
     HEADER = "Objectives:"
     objective1 = "To indentify numerals"
     objective2 = 'To count to 10'
-    objective_plan = "#{HEADER}\n1. #{objective1}\n2. #{objective2}"
+    objective_plan = "#{HEADER}\n#{objective1}\n#{objective2}"
     objective_planner.add_to_plan(objective1)
     expect(objective_planner.add_to_plan(objective2)).to eq objective_plan
   end
