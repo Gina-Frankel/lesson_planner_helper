@@ -27,10 +27,6 @@ class LessonPlanner
 
   def display
     printer.output(plan)
-    # plan.each do |paragraph|
-    #    printer.output(paragraph)
-    # end
-    
   end 
     
 
