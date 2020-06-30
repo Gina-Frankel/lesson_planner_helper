@@ -11,10 +11,11 @@ class QuestionPlanner
 
   def add_to_plan(user_input)
     questions.push([BULLET_POINT + user_input])
-    format_for_display
+    #format_for_display
+    self
   end
 
-  def format_for_display
-    questions.join("\n")
-  end
+  # def format_for_display
+  #   questions.join("\n")
+  # end
 end
