@@ -1,5 +1,3 @@
-require 'lesson_planner'
-
 class Printer
   def initialize
     
