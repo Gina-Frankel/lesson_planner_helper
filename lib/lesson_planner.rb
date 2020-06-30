@@ -13,7 +13,7 @@ class LessonPlanner
     @objectives = []
     #@resources = ResourcePlanner.new
     @printer = printer
-    @plan =  ""
+    @plan =  []
   end
 
   def get_welcome_message
@@ -21,12 +21,16 @@ class LessonPlanner
   end
 
   def write(planner, planning_item)
-    @plan = planner.add_to_plan(planning_item)
+    @plan.push(planner.add_to_plan(planning_item))
     display
   end 
 
   def display
     printer.output(plan)
+    # plan.each do |paragraph|
+    #    printer.output(paragraph)
+    # end
+    
   end 
     
 
