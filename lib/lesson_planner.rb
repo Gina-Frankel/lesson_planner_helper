@@ -22,7 +22,6 @@ class LessonPlanner
 
   def write(planner, planning_item)
     @plan.push(planner.add_to_plan(planning_item))
-    # display
   end 
 
   def display
