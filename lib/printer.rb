@@ -4,6 +4,8 @@ class Printer
   end
 
   def output(plan)
-    print(plan)
+    plan.each do | row|
+      puts row.questions
+    end 
   end 
 end
