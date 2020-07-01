@@ -6,7 +6,7 @@ class QuestionPlanner
 
   HEADER = 'Questions:'
   def initialize
-    @questions = [[HEADER]]
+    @questions = [[]]
   end
 
   def add_to_plan(user_input)
